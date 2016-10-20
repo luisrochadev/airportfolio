@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+    <% include partials/head %> 
+  </head>
+  <body>
+  <% include partials/navbar %>
+
+    <div class="profile-padding">
+      <div class="center-align">
+        <img src=" <%= main_picture %>" class="circle" width="100"><br>
+        <h1 class="profile-name"><%= first_name %>&nbsp;<%= last_name %> </h1>
+        <span><%= role %>, <%= city %>.</span>
+      </div>
+    </div>
+
+
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <% for(var i=0; i < photoArray.length; i++) { %>
+      <div class="grid-item">
+      <a href="#" class="" data-featherlight="<%= photoArray[i].photo %>"> <img class="responsive-img "  src="<%= photoArray[i].photo %>"></a> 
+      </div>
+      <% } %>
+    </div>
+  
+
+
+
+  <% include partials/footer %>
+  </body>
+</html>
+
+

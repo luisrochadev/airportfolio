@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log-In</title>
+	
+	<% include partials/head %> 
+
+</head>
+<body>
+
+<% include partials/navbarmin %> 
+<div class="container">
+
+<div class="row">
+<div class="col s4 offset-s4">
+ <div class="card white">
+ <div class="card-content black-text">
+
+ <span class="card-title">Log-in</span><form action="/login" method="post">
+  <br>email:<br>
+  <input type="text" name="email"><br>
+  <br>password:<br>
+  <input type="password" name="password">
+      <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
+</form>
+
+</div>
+  </div>
+  </div>
+  </div>
+
+</div>
+
+<% include partials/footer %>
+</body>
+</html>
+

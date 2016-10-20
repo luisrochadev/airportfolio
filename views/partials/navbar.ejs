@@ -1,0 +1,32 @@
+<!-- MOBILE NAVIGATION MENU -->
+  <nav class="hide-on-large-only grey darken-4 z-depth-0">
+    <a href="/" class="brand-logo nav-text">Air Portfolio</a>
+    <ul id="slide-out" class="side-nav">
+        <li><a href="/public/<%= userID %>"" target="_blank">View Public Profile</a></li>
+        <li><a href="/upload/<%= userID %>">Upload Portfolio Content</a></li>
+        <li><a href="/upload/customPic/<%= userID %>">Upload Profile Pic</a></li>
+        <li><a href="/auth/logout">Logout</a></li> 
+      </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+  </nav>
+  
+  <!-- DROPDOWNMENU -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="/upload/<%= userID %>" class="thin black-text">Portfolio Content</a></li>
+    <li class="divider"></li>
+    <li><a href="/upload/customPic/<%= userID %>" class="thin black-text">Profile Pic</a></li>
+  </ul>
+
+
+   <nav class="grey darken-4 hide-on-med-and-down">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo nav-text">Air Portfolio</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/public/<%= userID %>" class="thin" target="_blank">View Public Profile</a></li>
+        <!-- Dropdown Trigger -->
+         <li><a class="dropdown-button thin" href="#!" data-activates="dropdown1">Upload<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="/auth/logout" class="thin ">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
