@@ -27,7 +27,7 @@ router.get('/facebook', passport.authenticate('facebook', { scope: 'email'}));
 router.get('/facebook/callback', passport.authenticate('facebook', { 
 									successRedirect: '/auth/success',
                                     failureRedirect: '/' }));
-router.get('/success', function(req, res, next){
+router.get('/auth/success', function(req, res, next){
 	var id = req.session.passport.user.id;
 	knex('users').where({userID: id}).then(function(rows){
 		if(rows.length === 0){
