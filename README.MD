@@ -1,16 +1,33 @@
-## Description
+<div align="center">
+<p>
+<img src="http://i.imgur.com/ygh04qD.png"/ width="250">
+</p>
 
-This application connects photographers, models and makeup artists. You can sign up for the application as one of these three roles, then add photos to highlight your best work.
 
-## Technologies
+<p>✨ <strong>AirPortfolio</strong> is a website currently under development meant to empower creatives to make a beautiful, responsive portfolio in under 5 minutes. ✨</p>
 
-This application was build with Node/Express, Twitter Bootstrap, and postgreSQL.
+</div>
 
-## How to Install Run
+---
+## Features
+* 🔩 <strong>Simple: </strong> Fast set-up. From profile creation, to photo upload, to public sharing in under 5 minutes.
 
-First make sure you have set up a postgreSQL database on your local machine and name that database meetup. Once you fork and clone the repo: 
+* 💪 <strong>Powerful: </strong> Built with a [KNEX.js](http://knexjs.org/) database and [BCRYPT](https://www.npmjs.com/package/bcrypt) password hashing on the back-end.
 
-```npm install```
-```knex init```
-```knex migrate:latest```
-```node server.js```
+* 📱 <strong>Responsive: </strong> Made for a beautiful experience across all devices using [Materialize](http://materializecss.com/) and [Masonry.js](http://masonry.desandro.com/). 
+
+
+## Demo
+<div align="center">
+  <strong>Coming soon!</strong>
+</div>
+
+
+
+
+## Improvements
+- [ ] Establish which image hosting service will be used in public version
+- [ ] Update "role" selection to be text-editable rather than a radio selection
+
+
+
